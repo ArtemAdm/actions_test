@@ -7,13 +7,15 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - id: foo
-        uses: ArtemAdm/actions-composite/action-one@v2.4
-        with:
-          who-to-greet: 'Artem Dv'
-      - run: echo random-number ${{ steps.foo.outputs.random-number }}
-        shell: bash
-      - id: far
-        uses: ArtemAdm/actions-composite/action-two@v2.4
-        with:
-          file: 'lastlog'
+      # - id: foo
+      #   uses: ArtemAdm/actions-composite/action-one@v2.4
+      #   with:
+      #     who-to-greet: 'Artem Dv'
+      # - run: echo random-number ${{ steps.foo.outputs.random-number }}
+      #   shell: bash
+      # - id: far
+      #   uses: ArtemAdm/actions-composite/action-two@v2.4
+      #   with:
+      #     file: 'lastlog'
+      - name: Clean Workspace
+        uses: ArtemAdm/actions-composite/clean-runner@v3
