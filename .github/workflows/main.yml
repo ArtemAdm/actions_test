@@ -18,4 +18,4 @@ jobs:
       #   with:
       #     file: 'lastlog'
       - name: Clean Workspace
-        uses: ArtemAdm/actions-composite/clean-runner@v3.2
+        uses: ArtemAdm/actions-composite/clean-runner@clean-runner
