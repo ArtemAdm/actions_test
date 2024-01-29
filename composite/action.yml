@@ -1,0 +1,13 @@
+name: 'Clean runner'
+author: 'artem.dovzhenko@genesys.com'
+description: 'Clean Workspace'
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        ls -lah
+        touch 123.txt
+        mkdir test11
+        ls -lah
+        env
+      shell: bash
