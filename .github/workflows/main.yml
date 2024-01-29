@@ -20,5 +20,5 @@ jobs:
       # - name: Clean Workspace
       #   uses: ArtemAdm/actions-composite/clean-runner@v3.6
       - name: Local composite
-        uses: ${{ github.action_repository }}/composite
+        uses: composite/clean
 
